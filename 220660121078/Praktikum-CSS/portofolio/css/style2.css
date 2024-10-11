@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  /* Mengubah font menjadi Roboto */
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #006d77;
+  /* Warna biru kehijauan */
+  color: white;
+  border-radius: 8px;
+  /* Mengurangi border-radius */
+}
+
+.name {
+  color: #e9ecef;
+  /* Membuat nama lebih terlihat */
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+blockquote {
+  margin: 10px 0;
+  padding: 10px;
+  font-style: italic;
+  color: #e9ecef;
+  /* Warna teks kutipan */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: #fff;
+  /* Putih untuk bagian genap */
+  padding: 15px;
+  border-radius: 4px;
+  /* Mengurangi border-radius */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies-skills {
+  display: flex;
+  justify-content: center;
+  /* Rata tengah */
+  gap: 40px;
+  /* Jarak antar kolom hobi dan skill */
+}
+
+.hobbies,
+.skills {
+  flex: 1;
+  /* Membagi lebar kolom secara merata */
+  text-align: center;
+  /* Rata tengah untuk teks di dalam kolom */
+}
+
+.hobbies ul,
+.skills ol {
+  padding: 0;
+  /* Menghapus padding di ul dan ol */
+  list-style-type: none;
+  /* Menghilangkan angka dan bullet */
+}
+
+.hobbies li,
+.skills li {
+  margin: 10px 0;
+  /* Jarak antar item */
+  padding: 10px;
+  /* Padding item */
+  border-radius: 4px;
+  /* Radius sudut untuk item */
+  transition: background-color 0.3s;
+  /* Transisi untuk efek hover */
+}
+
+/* Background color untuk hobi dan skill */
+.hobbies li,
+.skills li {
+  background-color: #e9ecef;
+  /* Warna untuk hobi item ganjil */
+}
+
+.hobbies li:hover,
+.skills li:hover {
+  background-color: #cbd5e1;
+  /* Warna saat hover */
+}
+
+h2 {
+  color: #006d77;
+  /* Warna judul yang lebih sesuai */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+  /* Warna abu muda untuk baris genap */
+}
+
+ul {
+  list-style-type: none;
+  /* Menghilangkan bullet point */
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.audio-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #006d77;
+  /* Border audio */
+  border-radius: 4px;
+  /* Mengurangi border-radius */
+  background-color: #e9ecef;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  /* Maksimal lebar video */
+  height: 315px;
+  /* Tinggi video */
+  border-radius: 4px;
+  /* Mengurangi border-radius */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #006d77;
+  /* Warna footer */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: white;
+  /* Warna link di footer */
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
