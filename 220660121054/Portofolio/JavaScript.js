@@ -1,9 +1,9 @@
-// 1. Alert message when the page loads
+// 1. Alert message ketika halaman dimuat
 window.onload = function() {
     alert("Welcome to my personal portfolio!");
 };
 
-// 2. Smooth Scrolling for Anchor Links
+// 2. Smooth Scrolling untuk Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function(e) {
         e.preventDefault();
@@ -13,9 +13,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// 3. Theme Switcher
+// 3. Theme Switcher (mode terang dan gelap)
 const themeToggleBtn = document.createElement('button');
-themeToggleBtn.innerHTML = "🌞"; // Start with sun icon
+themeToggleBtn.innerHTML = "🌞"; // Mulai dengan ikon matahari
 themeToggleBtn.className = "theme-toggle-btn";
 document.body.prepend(themeToggleBtn);
 
@@ -24,10 +24,10 @@ let darkTheme = false;
 themeToggleBtn.addEventListener("click", () => {
     darkTheme = !darkTheme;
     document.body.classList.toggle("dark-theme", darkTheme);
-    themeToggleBtn.innerHTML = darkTheme ? "🌙" : "🌞"; // Toggle icon
+    themeToggleBtn.innerHTML = darkTheme ? "🌙" : "🌞"; // Ganti ikon sesuai mode
 });
 
-// 4. Hover Effect for Profile Image
+// 4. Hover Effect untuk Profile Image
 const profileImg = document.querySelector(".profile-img");
 
 if (profileImg) {
@@ -39,19 +39,26 @@ if (profileImg) {
     profileImg.addEventListener("mouseleave", () => {
         profileImg.style.transform = "scale(1)";
     });
-    document.querySelector('.audio-section audio').addEventListener('click', function() {
-        this.classList.add('playing'); // Add a class on click
-        setTimeout(() => {
-            this.classList.remove('playing'); // Remove the class after the animation duration
-        }, 300); // Match this duration with the CSS transition duration
-    });
-    document.querySelector('.video-section iframe').addEventListener('click', function() {
-        this.classList.add('playing'); // Add a class on click
-        setTimeout(() => {
-            this.classList.remove('playing'); // Remove the class after the animation duration
-        }, 300); // Match this duration with the CSS transition duration
-    });
-        
 }
 
+// 5. Animasi Klik untuk Audio
+const audioElement = document.querySelector('.audio-section audio');
+if (audioElement) {
+    audioElement.addEventListener('click', function() {
+        this.classList.add('playing'); // Menambah class saat audio diputar
+        setTimeout(() => {
+            this.classList.remove('playing'); // Menghapus class setelah durasi animasi selesai
+        }, 300); // Durasi animasi
+    });
+}
 
+// 6. Animasi Klik untuk Video
+const videoElement = document.querySelector('.video-section iframe');
+if (videoElement) {
+    videoElement.addEventListener('click', function() {
+        this.classList.add('playing'); // Menambah class saat video diputar
+        setTimeout(() => {
+            this.classList.remove('playing'); // Menghapus class setelah durasi animasi selesai
+        }, 300); // Durasi animasi
+    });
+}

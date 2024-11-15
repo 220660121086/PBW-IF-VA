@@ -31,6 +31,8 @@
 | **Praktikum03**             | Modul JavaScript - Berisi file tugas JavaScript dasar. |
 | **Hasil Web Portofolio**    | Tampilan akhir dari portofolio website.             |
 | **Portofolio**              | Berisi Code HTML, CSS, JS                           |
+| **PHP**                     | Modul PHP - berisi file-file tugas                  |
+| **UTS**                     | Berisi tampilan hasil pengerjaan UTS                |
                                                                                    
 
 **Catatan**: Tabel ini membantu mempermudah navigasi ke bagian-bagian penting dari proyek.

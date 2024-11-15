@@ -4,12 +4,227 @@
     font-weight: normal;
     font-style: normal;
 }
+.hobbies-section {
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+.hobbies-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.hobbies-table th, .hobbies-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.hobbies-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+/* Styling untuk mode terang dan gelap */
+body.dark-theme {
+    background-color: #2e2e2e;
+    color: white;
+}
+
+body.dark-theme .hobbies-table {
+    background-color: transparent;
+    color: white;
+}
+
+body.dark-theme .hobbies-table th {
+    background-color: var(--border-color);
+}
+
+body.dark-theme .hobbies-table td {
+    border-color: white;
+}
+
+/* Hover effect pada tabel */
+.hobbies-table tbody tr:hover {
+    background-color: #555;
+    cursor: pointer;
+}
+
+/* Efek hover untuk teks */
+h2:hover {
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+
+.hobbies-table tbody tr:hover {
+    background-color: transparent;
+}
+
+/* Tema terang */
+body:not(.dark-theme) .hobbies-table td {
+    color: black; /* Warna teks normal pada tema terang */
+}
+
+/* Tema gelap */
+body.dark-theme .hobbies-table td {
+    color: white; /* Warna teks pada tema gelap */
+}
+
+
+.hobbies-table tr:nth-child(even) {
+    background-color: transparent;
+}
+
 
 /* Reset default margins and paddings */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+  /* Reset default margins and paddings */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Video Background Styles */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Send the video to the back */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire area */
+    pointer-events: none; /* Prevent interaction with the video */
+    opacity: 0.7; /* Adjust opacity if needed */
+}
+
+/* Light and Dark Theme Variables */
+:root {
+    /* Light Theme Colors */
+    --background-color: #f3f6f9;
+    --text-color: #333;
+    --container-bg: #fff;
+    --heading-color: #2c3e50;
+    --border-color: #2980b9;
+    --blockquote-bg: #f4f8fb;
+    --link-color: #2980b9;
+    --link-hover-color: #1a5276;
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+    --background-color: #333;
+    --text-color: #f4f4f9;
+    --container-bg: #444;
+    --heading-color: #f4f4f9;
+    --border-color: #76c7c0;
+    --blockquote-bg: #555;
+    --link-color: #76c7c0;
+    --link-hover-color: #bbded6;
+}
+
+/* Theme toggle button styles */
+.theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.5em; /* Slightly larger font for emphasis */
+}
+
+/* Hover effect for the button */
+.theme-toggle-btn:hover {
+    background-color: var(--border-color);
+    color: var(--container-bg);
+}
+
+/* Body styles using theme variables */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+h2 {
+    text-align: center;
+}
+
+
+/* Transparent background class */
+.transparent-bg {
+    background-color: transparent !important; /* Ensure transparency */
+}
+
+/* Container for layout */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: var(--container-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative; /* Added to position pseudo-elements */
+}
+
+/* Section headings */
+h1 {
+    color: var(--heading-color);
+    font-size: 2.4em; /* Increased font size for a more impactful title */
+    font-weight: 700; /* Bold weight for emphasis */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Tombol Ikon di Pojok Kiri Atas */
+.corner-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #2980b9; /* Warna latar awal tombol */
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover efek untuk tombol */
+.corner-btn:hover {
+    background-color: transparent; /* Ubah background tombol menjadi transparan saat dihover */
+}
+
+/* Responsif terhadap tampilan tombol */
+@media (max-width: 600px) {
+    .corner-btn {
+        padding: 8px; /* Ukuran tombol lebih kecil di layar kecil */
+    }
 }
 
 body {
@@ -204,7 +419,7 @@ th {
 }
 
 tr:nth-child(even) {
-    background-color: var(--blockquote-bg);
+    background-color: transparent;
 }
 
 /* List styles */

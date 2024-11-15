@@ -54,7 +54,7 @@
   
   /* Blockquote dengan bayangan teks */
   blockquote {
-    margin: 10px 0;
+    margin: 0px 0;
     padding: 10px;
     font-style: italic;
     color: #e9ecef;
