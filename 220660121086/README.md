@@ -18,4 +18,4 @@ Di sini berisi berbagai proyek dengan teknologi yang berbeda-beda, dari HTML, CS
 
 ## 📚 Hobi 🎧
 
-Membaca novel dan mendengarkan musik— punya beberapa novel di rak (tidak terlalu banyak), dan juga menggunakan tiga in-ear monitor (IEM) berbeda untuk meningkatkan pengalaman mendengarkan musik. Masing-masing memberikan suara yang unik dan membuat segalanya jadi lebih menarik.
+Membaca novel dan mendengarkan musik— punya beberapa novel (tidak terlalu banyak), dan juga menggunakan tiga in-ear monitor (IEM) berbeda untuk meningkatkan pengalaman mendengarkan musik. Masing-masing memberikan suara yang unik dan membuat segalanya jadi lebih menarik.
