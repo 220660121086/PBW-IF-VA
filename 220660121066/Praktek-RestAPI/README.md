@@ -1,24 +1,18 @@
-# Todo List API
+# Todo List PHP
 
-API sederhana untuk aplikasi Todo List yang memungkinkan pengguna untuk mengelola tugas dengan menambah, menandai selesai, dan menghapus tugas.
+Aplikasi **Todo List** berbasis PHP untuk mengelola tugas harian Anda, dilengkapi fitur konfirmasi sebelum penghapusan tugas.
 
 ## Fitur
 
-- **Tambah Todo**: Menambahkan tugas baru.
-- **Ambil Todos**: Mengambil semua tugas.
-- **Update Todo**: Menandai tugas sebagai selesai atau tidak selesai.
-- **Hapus Todo**: Menghapus tugas dari daftar.
+- **Tambah Tugas**: Menambahkan tugas baru dengan mudah.
+- **Tandai Selesai**: Menandai tugas sebagai selesai.
+- **Hapus Tugas dengan Konfirmasi**: Menghindari penghapusan tugas secara tidak sengaja.
+- **Penyimpanan Data**: Menggunakan MySQL untuk menyimpan data tugas.
 
-## Endpoint API
+## Tampilan
 
-### 1. `GET /api.php?action=list`
-Mengambil daftar semua tugas.
+### Halaman Utama
+![Halaman Utama](https://imgur.com/qrmJzPF.png)
 
-### 2. `POST /api.php?action=add`
-Menambahkan tugas baru.
-
-**Body Request**:
-```json
-{
-  "task": "Belajar PHP"
-}
+### Konfirmasi Penghapusan
+![Postman](https://imgur.com/6yMDGzH.png)
